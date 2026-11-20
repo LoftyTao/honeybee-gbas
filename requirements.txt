@@ -1,0 +1,5 @@
+honeybee-core>=1.64.79
+honeybee-energy>=1.127.1
+honeybee-energy-standards>=2.3.5
+ladybug-geometry>=1.35
+shapely>=2.0,<3

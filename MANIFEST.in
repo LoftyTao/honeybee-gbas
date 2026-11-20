@@ -1,0 +1,11 @@
+include LICENSE
+include README.md
+include README.en.md
+include requirements.txt
+include honeybee_gbas/dwg/LICENSE-ezdwg.txt
+prune assets
+prune samples
+prune tests
+prune build
+prune dist
+global-exclude *.py[cod] __pycache__

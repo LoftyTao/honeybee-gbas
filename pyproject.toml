@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "honeybee-gbas"
+version = "1.0.0"
+description = "Honeybee extension for native GBAS2026 DWG export"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+dynamic = ["dependencies"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+honeybee-gbas = "honeybee_gbas.cli:gbas"
+
+[project.urls]
+Homepage = "https://github.com/loftytao/honeybee-gbas"
+Repository = "https://github.com/loftytao/honeybee-gbas"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+honeybee_gbas = ["dwg/LICENSE-ezdwg.txt"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["honeybee_gbas*"]
+namespaces = false
