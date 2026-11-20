@@ -7,7 +7,7 @@
   <img src="assets/gbas-logo.png" alt="GBAS2026" height="72" />
 </p>
 
-`honeybee-gbas` 是面向 **GBAS2026** 的 **Honeybee** 导出扩展库（当前版本 `1.0.0`）。
+`honeybee-gbas` 是面向 **GBAS2026(绿建斯维尔)** 的 **Honeybee** 导出扩展库（当前版本 `1.0.0`）。
 模型通过纯 Python 二进制后端直接输出为原生 DWG 图纸。
 
 导出覆盖模型几何、房间边界、门窗开口、屋面天窗、遮阳与源热工属性。
